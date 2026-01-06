@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Simon Says Game</title>
+</head>
+<body>
+    <h1><u>Simon Game</u></h1>
+    <h2 id="myh2">Press any Key to start the Game</h2>
+    <div class="btn-container">
+        <div class="line-one">
+            <div class="btn red" id="red" onclick="playSound1()"></div>
+            <div class="btn yellow" id="yellow" onclick="playSound2()"></div>
+        </div>
+        <div class="line-two">
+            <div class="btn green" id="green" onclick="playSound3()"></div>
+            <div class="btn purple" id="purple" onclick="playSound4()"></div>
+        </div>
+        <audio id="sound1" src="beep_low_300Hz.mp3"></audio>
+        <audio id="sound2" src="beep_mid_500Hz.mp3"></audio>
+        <audio id="sound3" src="soft_sine_beep.mp3"></audio>
+        <audio id="sound4" src="mellow_rounded_beep.mp3"></audio>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
